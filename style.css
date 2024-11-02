@@ -1,3 +1,39 @@
+@-webkit-keyframes wiggle {
+  0% {
+    -webkit-transform: skewX(24deg);
+  }
+  10% {
+    -webkit-transform: skewX(-8deg);
+  }
+  20% {
+    -webkit-transform: skewX(55deg);
+  }
+  30% {
+    -webkit-transform: skewX(-90deg);
+  }
+  40% {
+    -webkit-transform: skewX(29deg);
+  }
+  50% {
+    -webkit-transform: skewX(-90deg);
+  }
+  60% {
+    -webkit-transform: skewX(3deg);
+  }
+  70% {
+    -webkit-transform: skewX(-2deg);
+  }
+  80% {
+    -webkit-transform: skewX(1deg);
+  }
+  90% {
+    -webkit-transform: skewX(10deg);
+  }
+  100% {
+    -webkit-transform: skewX(0deg);
+  }
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -60,10 +96,18 @@ p {
   font-weight: 400;
 }
 
-.banner h1 .magnus {
+.magnus {
   font-family: "Libre Baskerville", serif;
   color: #008e42;
   font-size: 7.5rem;
+  transition: 0.2s;
+}
+
+.magnus:hover {
+  -webkit-animation: wiggle 0.2s 4;
+  color: #fff;
+  text-shadow: 20px 6px rgba(201, 132, 62, 0.4), -18px -4px rgba(16, 105, 62, 0.4),
+    -2px -4px rgba(121, 0, 0, 0.8);
 }
 
 .banner h2 {
@@ -75,10 +119,44 @@ p {
   display: inline-block;
 }
 
+/* quote */
+
+.quote-container {
+  padding: 30px;
+  border-top: 1px solid #c9843e;
+  border-bottom: 1px solid #c9843e;
+}
+
+.quote {
+  width: 70%;
+  padding: 30px;
+}
+
+.quote h3 {
+  font-family: "Libre Baskerville", serif;
+  color: #008e42;
+  font-size: 2.5rem;
+  font-style: italic;
+  font-weight: 200;
+}
+
+.author {
+  font-size: 0.875rem;
+  opacity: 0.8;
+  letter-spacing: 0.1rem;
+  margin-top: 40px;
+  text-align: right;
+}
+
 /* subscribe */
 
+.subscribe-container {
+  padding: 30px;
+  border-bottom: 1px solid #c9843e;
+}
+
 .subscribe h2 {
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 .subscribe-button {
@@ -88,9 +166,21 @@ p {
   padding: 10px 25px;
   text-decoration: none;
   transition: 0.3s;
+  margin: 0 5px;
 }
 
 .subscribe-button:hover {
   background: #a3681c;
   color: #fff;
+}
+
+/* extra */
+
+.extra-container {
+  padding: 30px;
+  border-bottom: 1px solid #c9843e;
+}
+
+.extra h2 {
+  margin-bottom: 30px;
 }
