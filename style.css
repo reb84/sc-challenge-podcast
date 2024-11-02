@@ -25,33 +25,33 @@ a:hover {
   text-decoration: none;
 }
 
+p {
+  letter-spacing: 0.063rem;
+}
+.container {
+  margin: 0 auto;
+  max-width: 90%;
+}
+
 /* Banner */
 
 .banner {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 50rem;
-  background: url("") center center no-repeat;
-  background-size: cover;
   color: #fff;
   text-transform: uppercase;
-  font-family: "Open Sans", sans-serif;
+  letter-spacing: 0.3rem;
+  height: 100vh;
 }
 
 .banner h1 {
-  padding-top: 100px;
-  font-size: 62px;
+  padding-top: 0px;
+  font-size: 3.875rem;
   font-weight: 400;
-  letter-spacing: 0.2em;
 }
 
 .banner h1 .magnus {
   font-family: "Libre Baskerville", serif;
   color: #008e42;
-  font-size: 98px;
-  letter-spacing: 0.2em;
+  font-size: 7.5rem;
 }
 
 .banner h2 {
@@ -59,6 +59,6 @@ a:hover {
   padding: 5px 0;
   border-top: 3px solid #fff;
   border-bottom: 3px solid #fff;
-  font-size: 14px;
-  letter-spacing: 2px;
+  font-size: 0.875rem;
+  display: inline-block;
 }
