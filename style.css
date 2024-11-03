@@ -205,6 +205,29 @@ a:hover {
   font-weight: 200;
 }
 
+.quote-generator {
+  margin-top: 50px;
+}
+
+.quote-button {
+  background-color: #c9843e;
+  color: #fff;
+  border-radius: 6px;
+  padding: 10px 25px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.quote-button:hover {
+  color: #000;
+  text-decoration: none;
+  background: #008e42;
+  box-shadow: 0px 0px 10px 4px rgba(0, 142, 66, 0.75);
+  -webkit-box-shadow: 0px 0px 10px 4px rgba(0, 142, 66, 0.75);
+  -moz-box-shadow: 0px 0px 10px 4px rgba(0, 142, 66, 0.75);
+  cursor: pointer;
+}
+
 /* subscribe */
 
 .button-container {

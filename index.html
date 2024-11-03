@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Fave Podcast</title>
+    <title>The Magnus Archives</title>
 
     <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -52,11 +52,16 @@
         </div>
 
         <div class="quote-container">
-          <div class="quote">
+          <div class="quote" id="quote-result">
             <h3>
               “I haven't slept in some time. I can't sleep. My dreams are crawling and many-legged.
               They are slithering and burrowing. But they always sing the song of flesh.”
             </h3>
+          </div>
+          <div class="quote-generator">
+            <a onclick="generateNumber()" class="quote-button" title="click to read more quotes">
+              click for more
+            </a>
           </div>
         </div>
 
@@ -98,5 +103,6 @@
       </main>
       <!-- /container -->
     </div>
+    <script src="./script.js"></script>
   </body>
 </html>
