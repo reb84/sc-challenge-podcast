@@ -42,8 +42,7 @@
 html,
 body {
   scroll-behavior: smooth;
-  margin: 0;
-  padding: 0;
+  margin: 0 auto;
   font-family: "Open Sans", sans-serif;
   background-color: #030303;
   color: #fff;
@@ -53,10 +52,21 @@ body {
 p {
   letter-spacing: 0.15rem;
 }
+a {
+  text-decoration: none;
+  color: #c9843e;
+  font-weight: 600;
+}
+
+a:hover {
+  text-decoration: line-through;
+  color: #a3681c;
+}
 
 .container {
   margin: 0 auto;
   max-width: 90%;
+  font-weight: 200;
 }
 
 /* banner */
@@ -70,6 +80,8 @@ p {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  margin: 0 auto;
 }
 
 .banner h1 {
@@ -139,6 +151,7 @@ p {
 
 .more-button:hover {
   color: #000;
+  text-decoration: none;
   box-shadow: 0px 0px 10px 4px rgba(0, 142, 66, 0.75);
   -webkit-box-shadow: 0px 0px 10px 4px rgba(0, 142, 66, 0.75);
   -moz-box-shadow: 0px 0px 10px 4px rgba(0, 142, 66, 0.75);
@@ -176,8 +189,6 @@ p {
   opacity: 0.8;
 }
 
-/* about */
-
 /* quote */
 
 .quote {
@@ -206,6 +217,9 @@ p {
 
 .button-container {
   padding: 10px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .subscribe-button {
@@ -215,12 +229,82 @@ p {
   padding: 10px 25px;
   text-decoration: none;
   transition: 0.3s;
-  margin: 0 5px;
+  margin: 3px 5px;
 }
 
 .subscribe-button:hover {
-  background: #a3681c;
-  color: #fff;
+  color: #000;
+  text-decoration: none;
+  background: #008e42;
+  box-shadow: 0px 0px 10px 4px rgba(0, 142, 66, 0.75);
+  -webkit-box-shadow: 0px 0px 10px 4px rgba(0, 142, 66, 0.75);
+  -moz-box-shadow: 0px 0px 10px 4px rgba(0, 142, 66, 0.75);
 }
 
 /* extra */
+
+/* responsive */
+
+@media screen and (max-width: 768px) {
+  .banner h1 {
+    font-size: 3.475rem;
+  }
+
+  .magnus {
+    font-size: 7.1rem;
+  }
+
+  .banner h2 {
+    font-size: 0.675rem;
+  }
+
+  p {
+    font-size: 0.8em;
+  }
+
+  .quote {
+    width: 90%;
+  }
+
+  .quote h3 {
+    font-size: 1.5rem;
+  }
+
+  .author {
+    font-size: 0.8em;
+    text-align: center;
+  }
+
+  .button-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .subscribe-button {
+    margin: 3px auto;
+    width: 150px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .banner h1 {
+    font-size: 1.475rem;
+  }
+
+  .magnus {
+    font-size: 4.1rem;
+  }
+
+  .banner h2 {
+    font-size: 0.475rem;
+    border-top: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+  }
+
+  p {
+    font-size: 0.8em;
+  }
+
+  .quote {
+    width: 100%;
+  }
+}
