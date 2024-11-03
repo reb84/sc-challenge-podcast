@@ -205,14 +205,6 @@ a:hover {
   font-weight: 200;
 }
 
-.author {
-  font-size: 0.875rem;
-  opacity: 0.8;
-  letter-spacing: 0.1rem;
-  margin-top: 40px;
-  text-align: right;
-}
-
 /* subscribe */
 
 .button-container {
@@ -268,11 +260,6 @@ a:hover {
 
   .quote h3 {
     font-size: 1.5rem;
-  }
-
-  .author {
-    font-size: 0.8em;
-    text-align: center;
   }
 
   .button-container {
