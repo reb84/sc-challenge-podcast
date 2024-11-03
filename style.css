@@ -62,18 +62,11 @@ a:hover {
 }
 
 p {
-  letter-spacing: 0.063rem;
-}
-.container {
-  margin: 0 auto;
-  max-width: 90%;
+  letter-spacing: 0.15rem;
 }
 
-.about,
-.quote,
-.subscribe,
-.extra {
-  margin: 50px auto;
+.container {
+  margin: 0 auto;
   max-width: 90%;
 }
 
@@ -105,7 +98,6 @@ p {
 
 .magnus:hover {
   animation: wiggle 0.2s 4;
-  color: #fff;
   text-shadow: 20px 6px rgba(201, 132, 62, 0.4), -18px -4px rgba(16, 105, 62, 0.4),
     -2px -4px rgba(121, 0, 0, 0.8);
 }
@@ -117,20 +109,45 @@ p {
   border-bottom: 3px solid #fff;
   font-size: 0.875rem;
   display: inline-block;
+  opacity: 0.6;
+}
+
+/* containers */
+
+.about-container,
+.quote-container,
+.subscribe-container,
+.extra-container {
+  max-width: 90%;
+  margin: 0 auto;
+  padding: 40px;
+  border-top: 1px solid #a3681c;
+}
+
+.about,
+.subscribe,
+.extra {
+  padding: 20px;
+}
+
+.about h2,
+.subscribe h2,
+.extra h2 {
+  margin-bottom: 20px;
+  font-family: "Libre Baskerville", serif;
+  font-style: italic;
+  font-weight: 200;
   opacity: 0.8;
 }
 
+/* about */
+
 /* quote */
 
-.quote-container {
-  padding: 30px;
-  border-top: 1px solid #c9843e;
-  border-bottom: 1px solid #c9843e;
-}
-
 .quote {
-  width: 70%;
-  padding: 30px;
+  width: 80%;
+  margin: 0 auto;
+  padding: 30px 0;
 }
 
 .quote h3 {
@@ -151,13 +168,8 @@ p {
 
 /* subscribe */
 
-.subscribe-container {
-  padding: 30px;
-  border-bottom: 1px solid #c9843e;
-}
-
-.subscribe h2 {
-  margin-bottom: 30px;
+.button-container {
+  padding: 10px 0;
 }
 
 .subscribe-button {
@@ -176,12 +188,3 @@ p {
 }
 
 /* extra */
-
-.extra-container {
-  padding: 30px;
-  border-bottom: 1px solid #c9843e;
-}
-
-.extra h2 {
-  margin-bottom: 30px;
-}
