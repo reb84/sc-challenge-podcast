@@ -50,17 +50,6 @@ body {
   text-align: center;
 }
 
-a {
-  color: #c48533;
-  text-decoration: underline;
-  text-decoration-thickness: 1px;
-}
-
-a:hover {
-  color: #c9843e;
-  text-decoration: none;
-}
-
 p {
   letter-spacing: 0.15rem;
 }
@@ -110,6 +99,53 @@ p {
   font-size: 0.875rem;
   display: inline-block;
   opacity: 0.6;
+}
+
+.more-button {
+  display: block;
+  width: 150px;
+  height: 40px;
+  line-height: 40px;
+  text-decoration: none;
+  color: #a3681c;
+  letter-spacing: 0.15rem;
+  position: relative;
+  transition: all 0.65s;
+  margin-top: 50px;
+  border-radius: 5px;
+  font-size: 0.875rem;
+  box-shadow: 0px 0px 10px 4px rgba(163, 104, 28, 0.75);
+  -webkit-box-shadow: 0px 0px 10px 4px rgba(163, 104, 28, 0.75);
+  -moz-box-shadow: 0px 0px 10px 4px rgba(163, 104, 28, 0.75);
+}
+
+.more-button span {
+  position: relative;
+  z-index: 2;
+}
+
+.more-button:after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: #008e42;
+  transition: all 0.65s;
+  opacity: 0.6;
+  border-radius: 5px;
+}
+
+.more-button:hover {
+  color: #000;
+  box-shadow: 0px 0px 10px 4px rgba(0, 142, 66, 0.75);
+  -webkit-box-shadow: 0px 0px 10px 4px rgba(0, 142, 66, 0.75);
+  -moz-box-shadow: 0px 0px 10px 4px rgba(0, 142, 66, 0.75);
+}
+
+.more-button:hover:after {
+  width: 100%;
 }
 
 /* containers */
