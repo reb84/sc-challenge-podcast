@@ -166,7 +166,8 @@ a:hover {
 .about-container,
 .quote-container,
 .subscribe-container,
-.extra-container {
+.extra-container,
+.footer-container {
   max-width: 90%;
   margin: 0 auto;
   padding: 40px;
@@ -256,7 +257,13 @@ a:hover {
   -moz-box-shadow: 0px 0px 10px 4px rgba(0, 142, 66, 0.75);
 }
 
-/* extra */
+/* footer */
+
+.footer-container p {
+  font-size: small;
+  letter-spacing: 0rem;
+  opacity: 0.7;
+}
 
 /* responsive */
 
